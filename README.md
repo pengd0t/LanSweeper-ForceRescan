@@ -8,7 +8,7 @@ Lansweeper collects inventory data (hardware, software versions, etc.) from clie
 
 On occasion it is desirable to update Lansweeper data manually. For example, a report may show all computers running a particular version of software with a critical vulnerability, and a clean report is the metric used to confirm the issue has been resolved. In these cases there is not always a convenient built-in way to trigger an immediate scan.
 
-This script solves that problem by stopping the Lansweeper Agent service, removing its configuration file, and restarting the service. When the agent starts again it performs a fresh scan right away. The script can also be called at the end of other scripts (for example after a software upgrade) so that Lansweeper reflects the change almost immediately and progress can be tracked in near-real time.
+This script solves that problem by stopping the Lansweeper Agent service, removing its configuration file, and restarting the service. When the agent starts again under this condition, it performs a fresh scan right away. The script can also be called at the end of other scripts (for example after a software upgrade) so that Lansweeper reflects the change almost immediately and progress can be tracked in near-real time.
 
 ## How It Works
 
